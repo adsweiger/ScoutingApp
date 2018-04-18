@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TeamInfo" />
+        <activity android:name=".TeamPoints" />
+        <activity android:name=".Matches" />
+        <activity android:name=".BarrierScreen"></activity>
     </application>
 
 </manifest>
