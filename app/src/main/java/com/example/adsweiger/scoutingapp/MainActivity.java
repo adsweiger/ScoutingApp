@@ -14,7 +14,10 @@ public class MainActivity extends AppCompatActivity {
         Log.i("comment", "Hello");
     }
     public void onButtonClick(View view) {
+        Log.i("comment", "Point A Reached");
+        // Reaches point A but not B, must be an issue with the line below.
         setContentView(R.layout.activity_team_info);
+        Log.i("comment", "Point B Reached");
     }
     public void onButton2Click(View view) {
         setContentView(R.layout.activity_team_points);
