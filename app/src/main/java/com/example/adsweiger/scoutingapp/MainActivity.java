@@ -1,5 +1,6 @@
 package com.example.adsweiger.scoutingapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public void onButtonClick(View view) {
         Log.i("comment", "Point A Reached");
         // Reaches point A but not B, must be an issue with the line below.
-        setContentView(R.layout.activity_team_info);
+        Intent next = new Intent(this, TeamInfo.class);
+        startActivity(next);
         Log.i("comment", "Point B Reached");
     }
     public void onButton2Click(View view) {

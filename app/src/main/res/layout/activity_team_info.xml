@@ -16,10 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Intent
-        android:id="@+id/intent"
-        android:name="android.intent.action.MAIN" />
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -58,7 +54,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="109dp"
         android:text="Edit"
-        android:textAppearance="@android:style/TextAppearance.Holo.Light.Medium"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.928"

@@ -14,8 +14,9 @@ public class TeamInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_info);
     }
+
     public void onBackClick(View view) {
-        Intent back = new Intent(Intent.ACTION_MAIN);
+        Intent back = new Intent(this, MainActivity.class);
         startActivity(back);
     }
 }
