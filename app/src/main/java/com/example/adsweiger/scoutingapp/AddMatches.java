@@ -5,15 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class TeamPoints extends AppCompatActivity {
+public class AddMatches extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_team_points);
+        setContentView(R.layout.activity_add_matches);
     }
-    public void onBackClick(View view) {
-        Intent back = new Intent(this, MainActivity.class);
-        startActivity(back);
+    public void onDoneClick(View view) {
+        Intent done = new Intent(this, Matches.class);
+        startActivity(done);
     }
 }
