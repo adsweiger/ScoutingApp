@@ -21,6 +21,7 @@
         <activity android:name=".Matches" />
         <activity android:name=".BarrierScreen" />
         <activity android:name=".AddTeamInfo"></activity>
+        <activity android:name=".AddMatches" />
     </application>
 
 </manifest>
