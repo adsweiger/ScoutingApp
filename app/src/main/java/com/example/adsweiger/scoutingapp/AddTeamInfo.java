@@ -5,16 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class BarrierScreen extends AppCompatActivity {
+public class AddTeamInfo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.edit_team_info);
+        setContentView(R.layout.activity_add_team_info);
+    }
+    public void onBackClick(View view) {
+        Intent back = new Intent(this, TeamInfo.class);
+        startActivity(back);
     }
 
-    public void backToTeamInfo(View view) {
-        Intent backToTeamInfo = new Intent(this, TeamInfo.class);
-        startActivity(backToTeamInfo);
-    }
 }

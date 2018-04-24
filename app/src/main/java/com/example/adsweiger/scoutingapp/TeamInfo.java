@@ -19,4 +19,12 @@ public class TeamInfo extends AppCompatActivity {
         Intent back = new Intent(this, MainActivity.class);
         startActivity(back);
     }
+    public void editTeamInfo(View view) {
+        Intent editTeamInfo = new Intent(this, BarrierScreen.class);
+        startActivity(editTeamInfo);
+    }
+    public void addTeamInfo(View view) {
+        Intent addTeamInfo = new Intent(this, AddTeamInfo.class);
+        startActivity(addTeamInfo);
+    }
 }

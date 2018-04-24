@@ -19,7 +19,8 @@
         <activity android:name=".TeamInfo" />
         <activity android:name=".TeamPoints" />
         <activity android:name=".Matches" />
-        <activity android:name=".BarrierScreen"></activity>
+        <activity android:name=".BarrierScreen" />
+        <activity android:name=".AddTeamInfo"></activity>
     </application>
 
 </manifest>
