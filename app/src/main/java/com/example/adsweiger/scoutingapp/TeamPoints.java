@@ -12,4 +12,8 @@ public class TeamPoints extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_points);
     }
+    public void onBackClick(View view) {
+        Intent back = new Intent(this, MainActivity.class);
+        startActivity(back);
+    }
 }
