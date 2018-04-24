@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         Log.i("comment", "Point B Reached");
     }
     public void onButton2Click(View view) {
-        Intent next = new Intent(this, Matches.class);
+        Intent next = new Intent(this, TeamPoints.class);
         startActivity(next);
     }
     public void onButton3Click(View view) {
-        Intent next = new Intent(this, TeamPoints.class);
+        Intent next = new Intent(this, Matches.class);
         startActivity(next);
     }
 }
