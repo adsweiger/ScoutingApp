@@ -16,4 +16,8 @@ public class Matches extends AppCompatActivity {
         Intent back = new Intent(this, MainActivity.class);
         startActivity(back);
     }
+    public void onAddClick(View view) {
+        Intent add = new Intent(this, AddMatches.class);
+        startActivity(add);
+    }
 }
