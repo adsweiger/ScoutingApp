@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class TeamInfo extends AppCompatActivity {
 
@@ -13,6 +14,14 @@ public class TeamInfo extends AppCompatActivity {
         Log.i("comment", "Point C Reached");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_info);
+        Intent intent = getIntent();
+        Bundle b = intent.getExtras();
+        TextView teamName = new TextView;
+        if(b != null)
+        {
+            String getName = b.get("name of team");
+            teamName
+        }
     }
 
     public void onBackClick(View view) {
