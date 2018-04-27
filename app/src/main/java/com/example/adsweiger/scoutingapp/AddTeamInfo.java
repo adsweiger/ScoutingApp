@@ -22,8 +22,7 @@ public class AddTeamInfo extends AppCompatActivity {
     public void saveWhenDone(View view)
     {
         EditText editText = findViewById(R.id.editText);
-        TextView teamName = findViewById(R.id.textView13);
-        Intent saveTeamName = new Intent(AddTeamInfo.this, TeamInfo.class);
+        Intent saveTeamName = new Intent(this, TeamInfo.class);
         saveTeamName.putExtra("name of team", editText.getText());
         startActivity(saveTeamName);
         Intent back = new Intent(this, TeamInfo.class);
