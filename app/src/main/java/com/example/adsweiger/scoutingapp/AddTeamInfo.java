@@ -16,16 +16,13 @@ public class AddTeamInfo extends AppCompatActivity {
     }
 
     public void onBackClick(View view) {
-        Intent back = new Intent(this, TeamInfo.class);
-        startActivity(back);
+
     }
     public void saveWhenDone(View view)
     {
-        EditText editText = findViewById(R.id.editText);
         Intent saveTeamName = new Intent(this, TeamInfo.class);
-        saveTeamName.putExtra("name of team", editText.getText());
+        final EditText editText = findViewById(R.id.editText);
+        saveTeamName.putExtra("name of team", editText.getText().toString());
         startActivity(saveTeamName);
-        Intent back = new Intent(this, TeamInfo.class);
-        startActivity(back);
     }
 }

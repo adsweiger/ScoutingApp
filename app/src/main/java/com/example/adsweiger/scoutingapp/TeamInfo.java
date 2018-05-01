@@ -12,21 +12,20 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class TeamInfo extends AppCompatActivity {
-    TextView teamName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.i("comment", "Point C Reached");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_info);
-        Intent intent = getIntent();
-        Bundle b = intent.getExtras();
-        teamName = findViewById(R.id.textView13);
-        Log.i("stop", "Stopped before if statement");
-        if (b != null) {
-            Log.i("stuff", "Bundle not null");
-            String getName = (String) b.get("name of team");
-            teamName.setText(getName);
+        Bundle b = getIntent().getExtras();
+        if (b == null) {
+            Log.i("stuff", "Null bundle");
+            return;
         }
+        final TextView teamName = findViewById(R.id.textView13);
+        Log.i("stuff", "Bundle not null");
+        String getName = b.getString("name of team");
+        teamName.setText(getName);
     }
 
     public void onBackClick(View view) {
