@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1042513059352",
+    "firebase_url": "https://ftc-scouting-app-c5a86.firebaseio.com",
+    "project_id": "ftc-scouting-app-c5a86",
+    "storage_bucket": "ftc-scouting-app-c5a86.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042513059352:android:616d82ba110f016a",
+        "android_client_info": {
+          "package_name": "com.example.adsweiger.scoutingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042513059352-6p7tj4reuafsv0499mple4bhtnfq7p5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ZdQ6cERJhIuldDiylYebvov7EXpiSMs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
