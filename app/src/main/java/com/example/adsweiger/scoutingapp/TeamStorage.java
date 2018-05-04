@@ -1,4 +1,4 @@
-package com.example.adsweiger.scoutingapp;
+/*package com.example.adsweiger.scoutingapp;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,4 +27,6 @@ public class TeamStorage
 
     teamRef.setValueAsync(teams);
 }
+
+*/
 
