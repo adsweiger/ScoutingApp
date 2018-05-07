@@ -14,7 +14,7 @@
 
         <android.support.v7.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|enterAlways"></android.support.v7.widget.Toolbar>
 
         <android.support.design.widget.TabLayout
@@ -29,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 android:scrollbars="horizontal"
                 android:text="Home" />
 
@@ -37,6 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 android:text="Team Info" />
 
             <android.support.design.widget.TabItem
@@ -44,6 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 android:text="Team Points" />
 
             <android.support.design.widget.TabItem
@@ -51,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:focusable="true"
                 android:text="Matches" />
 
         </android.support.design.widget.TabLayout>
@@ -86,7 +90,7 @@
                 android:layout_marginStart="152dp"
                 android:layout_marginTop="166dp"
                 android:text="Team Info"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textAppearance="@android:style/TextAppearance.Large"
                 app:layout_constraintEnd_toStartOf="@+id/button2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -120,7 +124,7 @@
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="160dp"
                 android:text="TextView"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/button5" />
 
@@ -131,7 +135,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/NameOfTeam" />
 
@@ -142,7 +146,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/EndGamePlan" />
 
@@ -153,7 +157,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/TeleopPlan" />
 
@@ -164,7 +168,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/AutoCapability" />
 
@@ -175,7 +179,7 @@
                 android:layout_marginStart="6dp"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
-                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/TeamNumber" />
 
