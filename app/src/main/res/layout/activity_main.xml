@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <ConstraintLayout
-        android:layout_width="match parent"
-        android:layout_height="match parent" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <NavigationView
-        android:layout_width="wrap content"
-        android:layout_height="match parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:menu="@menu/drawer_view"
