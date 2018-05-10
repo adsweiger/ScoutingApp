@@ -1,12 +1,22 @@
-/*package com.example.adsweiger.scoutingapp;
+package com.example.adsweiger.scoutingapp;
 
+public class TeamStorage
+{
+    // Write a message to the database
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
+}
+/*
+// OUT OF ORDER
 import java.util.HashMap;
 import java.util.Map;
 
 public class TeamStorage
 {
-    final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference("");
+    final FirebaseDatabase database;
+        DatabaseReference ref;
 
     public String teamName;
     public String teamNumber;
@@ -17,8 +27,9 @@ public class TeamStorage
 
     public TeamStorage(String teamName, String teamNumber, String autoCapability, String telePlan, String endGamePlan, String otherInfo)
     {
-        // ...
-    }
+        database = FirebaseDatabase.getInstance();
+        ref = database.getReference("");
+   }
 
     DatabaseReference teamRef = ref.child("teams");
 
@@ -26,7 +37,4 @@ public class TeamStorage
     teams.put("Lost in Time", new TeamStorage("4324","Unknown","Unknown","Unknown","Unknown"));
 
     teamRef.setValueAsync(teams);
-}
-
 */
-
