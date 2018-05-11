@@ -3,11 +3,12 @@ package com.example.adsweiger.scoutingapp;
 public class TeamStorage
 {
     // Write a message to the database
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("message");
+   // FirebaseDatabase database = FirebaseDatabase.getInstance();
+   // DatabaseReference myRef = database.getReference("message");
 
-        myRef.setValue("Hello, World!");
+       // myRef.setValue("Hello, World!");
 }
+
 /*
 // OUT OF ORDER
 import java.util.HashMap;
