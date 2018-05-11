@@ -2,23 +2,25 @@ package com.example.adsweiger.scoutingapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.util.LogWriter;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-// import com.google.firebase.storage.FirebaseStorage;
-// import com.google.firebase.storage.StorageReference;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.StorageReference;
 
 public class MainActivity extends AppCompatActivity {
-//   private StorageReference mStorageRef;
+   private StorageReference mStorageRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i("comment", "Hello");
-
-//        mStorageRef = FirebaseStorage.getInstance().getReference();
+        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+        mDatabase.push().setValue("Hey boss.");
     }
 
     public void onButtonClick(View view) {
