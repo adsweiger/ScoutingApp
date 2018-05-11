@@ -15,7 +15,7 @@
         <!--app:headerLayout="@layout/nav_header"-->
         <!--app:menu="@menu/drawer_view" />-->
 
-    <FrameLayout
+    <ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
@@ -84,6 +84,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
-</FrameLayout>
+</ConstraintLayout>
 
 </android.support.v4.widget.DrawerLayout>
