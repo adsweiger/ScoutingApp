@@ -3,19 +3,19 @@
     <group android:checkableBehavior="single" >
         <item
             android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="import" />
+            android:icon="@drawable/ic_action_name"
+            android:title="Home" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="gallery" />
+            android:title="Team Info" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="slideshow" />
+            android:title="Matches" />
         <item
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
-            android:title="tools" />
+            android:title="Team Points" />
     </group>
 </menu>
