@@ -15,8 +15,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.StorageReference;
 
 public class MainActivity extends AppCompatActivity {
-   private StorageReference mStorageRef;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
-                Log.d("recieve", "Value is: " + value);
+                Log.d("checkpoint", "Value is: " + value);
             }
 
             @Override
             public void onCancelled(DatabaseError error) {
                 // Failed to read value
-                Log.w("recieve", "Failed to read value.", error.toException());
+                Log.w("checkpoint", "Failed to read value.", error.toException());
             }
         });
     }
