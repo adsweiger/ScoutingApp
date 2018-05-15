@@ -22,4 +22,92 @@
         android:text="Add Match"
         app:layout_constraintStart_toEndOf="@+id/backButton"
         tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/MatchNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Number"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/RedAlliance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Alliance"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/RedTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Team 1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <TextView
+        android:id="@+id/RedTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Team 2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/BlueAlliance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Alliance"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <TextView
+        android:id="@+id/BlueTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Team 1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:id="@+id/BlueTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Team 2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <TextView
+        android:id="@+id/Red2Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red2Points"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/Red1Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red1Points"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <TextView
+        android:id="@+id/Blue1Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue1Points"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:id="@+id/Blue2Points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue2Points"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="387dp" />
 </android.support.constraint.ConstraintLayout>
