@@ -14,6 +14,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.StorageReference;
 
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +30,13 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
-                String value = dataSnapshot.getValue(String.class);
-                Log.d("checkpoint", "Value is: " + value);
+                Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
+                for(Map.Entry<String, Object> entry : map.entrySet())
+                {
+                    String key = entry.getKey();
+                    Object value = entry.getValue();
+                    Log.d("checkpoint", "Value is: " + value);
+                }
             }
 
             @Override
