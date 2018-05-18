@@ -11,7 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onBackClick"
-        android:text="Back" />
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addButton"
@@ -21,97 +23,113 @@
         android:onClick="onAddClick"
         android:text="Add Match"
         app:layout_constraintStart_toEndOf="@+id/backButton"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/MatchNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="141dp"
         android:text="Match Number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="141dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/RedAlliance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
         android:text="Red Alliance"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="188dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MatchNumber" />
 
     <TextView
         android:id="@+id/RedTeam1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
         android:text="Red Team 1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="226dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RedAlliance" />
 
     <TextView
         android:id="@+id/RedTeam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
         android:text="Red Team 2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="270dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RedTeam1" />
 
     <TextView
         android:id="@+id/BlueAlliance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
         android:text="Blue Alliance"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RedTeam2" />
 
     <TextView
         android:id="@+id/BlueTeam1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Blue Team 1"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="347dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/Blue1Points"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/BlueTeam2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Blue Team 2"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="387dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/Blue2Points"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Red2Points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Red2Points"
         android:inputType="number"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="270dp" />
+        android:text="Red2Points"
+        app:layout_constraintBaseline_toBaselineOf="@+id/RedTeam2"
+        app:layout_constraintStart_toStartOf="@+id/Red1Points" />
 
     <TextView
         android:id="@+id/Red1Points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Red1Points"
+        android:layout_marginStart="35dp"
         android:inputType="number"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="226dp" />
+        android:text="Red1Points"
+        app:layout_constraintBaseline_toBaselineOf="@+id/RedTeam1"
+        app:layout_constraintStart_toEndOf="@+id/RedTeam1" />
 
     <TextView
         android:id="@+id/Blue1Points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blue1Points"
+        android:layout_marginBottom="21dp"
         android:inputType="number"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="347dp" />
+        android:text="Blue1Points"
+        app:layout_constraintBottom_toTopOf="@+id/Blue2Points"
+        app:layout_constraintStart_toStartOf="@+id/Blue2Points" />
 
     <TextView
         android:id="@+id/Blue2Points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blue2Points"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="61dp"
         android:inputType="number"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="387dp" />
+        android:text="Blue2Points"
+        app:layout_constraintStart_toEndOf="@+id/BlueTeam2"
+        app:layout_constraintTop_toBottomOf="@+id/BlueAlliance" />
 </android.support.constraint.ConstraintLayout>
