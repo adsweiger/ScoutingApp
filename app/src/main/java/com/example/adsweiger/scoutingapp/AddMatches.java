@@ -52,14 +52,14 @@ public class AddMatches extends AppCompatActivity {
         DatabaseReference newBlueTwo = FirebaseDatabase.getInstance().getReference();
         newBlueTwo.push().setValue(blueTwo.getText().toString());
         DatabaseReference newMatch = FirebaseDatabase.getInstance().getReference();
-        newMatch.push().setValue(matchNumber.getText());
+        newMatch.push().setValue(String.valueOf(matchNumber.getText()));
         DatabaseReference newRedOnePoints = FirebaseDatabase.getInstance().getReference();
-        newRedOnePoints.push().setValue(redOnePoints.getText());
+        newRedOnePoints.push().setValue(redOnePoints.getText().toString());
         DatabaseReference newRedTwoPoints = FirebaseDatabase.getInstance().getReference();
-        newRedTwoPoints.push().setValue(redTwoPoints.getText());
+        newRedTwoPoints.push().setValue(redTwoPoints.getText().toString());
         DatabaseReference newBlueOnePoints = FirebaseDatabase.getInstance().getReference();
-        newBlueOnePoints.push().setValue(blueOnePoints.getText());
+        newBlueOnePoints.push().setValue(blueOnePoints.getText().toString());
         DatabaseReference newBlueTwoPoints = FirebaseDatabase.getInstance().getReference();
-        newBlueTwoPoints.push().setValue(blueTwoPoints.getText());
+        newBlueTwoPoints.push().setValue(blueTwoPoints.getText().toString());
         }
 }

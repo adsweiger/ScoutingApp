@@ -32,19 +32,19 @@ public class Matches extends AppCompatActivity {
         blueTwo.setText(getBlueTwo);
         final TextView matchNumber = findViewById(R.id.MatchNumber);
         Integer getMatchNumber = b.getInt("match number");
-        matchNumber.setText(getMatchNumber);
+        matchNumber.setText(Integer.toString(getMatchNumber));
         final TextView redOnePoints = findViewById(R.id.Red1Points);
         Integer getRedOnePoints = b.getInt("red one points");
-        redOnePoints.setText(getRedOnePoints);
+        redOnePoints.setText(Integer.toString(getRedOnePoints));
         final TextView redTwoPoints = findViewById(R.id.Red2Points);
         Integer getRedTwoPoints = b.getInt("red two points");
-        redTwoPoints.setText(getRedTwoPoints);
+        redTwoPoints.setText(Integer.toString(getRedTwoPoints));
         final TextView blueOnePoints = findViewById(R.id.Blue1Points);
         Integer getBlueOnePoints = b.getInt("blue one points");
-        blueOnePoints.setText(getBlueOnePoints);
+        blueOnePoints.setText(Integer.toString(getBlueOnePoints));
         final TextView blueTwoPoints = findViewById(R.id.Blue2Points);
         Integer getBlueTwoPoints = b.getInt("blue two points");
-        blueTwoPoints.setText(getBlueTwoPoints);
+        blueTwoPoints.setText(Integer.toString(getBlueTwoPoints));
     }
     public void onBackClick(View view) {
         Intent back = new Intent(this, MainActivity.class);
