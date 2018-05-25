@@ -35,16 +35,16 @@ public class AddTeamInfo extends AppCompatActivity {
         saveTeamInfo.putExtra("other team information", editText6.getText().toString());
         startActivity(saveTeamInfo);
         DatabaseReference newTeamName = FirebaseDatabase.getInstance().getReference();
-        newTeamName.push().setValue(editText.getText().toString());
+        newTeamName.child("Team Name").setValue(editText.getText().toString());
         DatabaseReference newTeamNumber = FirebaseDatabase.getInstance().getReference();
-        newTeamNumber.push().setValue(editText2.getText().toString());
+        newTeamNumber.child("Team Number").setValue(editText2.getText().toString());
         DatabaseReference newAutoCap = FirebaseDatabase.getInstance().getReference();
-        newAutoCap.push().setValue(editText3.getText().toString());
+        newAutoCap.child("Auto Capabilitiy").setValue(editText3.getText().toString());
         DatabaseReference newPlanForTele = FirebaseDatabase.getInstance().getReference();
-        newPlanForTele.push().setValue(editText4.getText().toString());
+        newPlanForTele.child("TeleOp Plan").setValue(editText4.getText().toString());
         DatabaseReference newPlanForEnd = FirebaseDatabase.getInstance().getReference();
-        newPlanForEnd.push().setValue(editText5.getText().toString());
+        newPlanForEnd.child("Endgame Plan").setValue(editText5.getText().toString());
         DatabaseReference newOtherInfo = FirebaseDatabase.getInstance().getReference();
-        newOtherInfo.push().setValue(editText6.getText().toString());
+        newOtherInfo.child("Other Information").setValue(editText6.getText().toString());
     }
 }

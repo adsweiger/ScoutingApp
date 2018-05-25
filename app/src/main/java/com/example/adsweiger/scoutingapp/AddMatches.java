@@ -44,22 +44,22 @@ public class AddMatches extends AppCompatActivity {
         startActivity(saveMatches);
         //startActivity(done);
         DatabaseReference newRedOne = FirebaseDatabase.getInstance().getReference();
-        newRedOne.push().setValue(redOne.getText().toString());
+        newRedOne.child("Red One Number").setValue(redOne.getText().toString());
         DatabaseReference newRedTwo = FirebaseDatabase.getInstance().getReference();
-        newRedTwo.push().setValue(redTwo.getText().toString());
+        newRedTwo.child("Red Two Number").setValue(redTwo.getText().toString());
         DatabaseReference newBlueOne = FirebaseDatabase.getInstance().getReference();
-        newBlueOne.push().setValue(blueOne.getText().toString());
+        newBlueOne.child("Blue One Number").setValue(blueOne.getText().toString());
         DatabaseReference newBlueTwo = FirebaseDatabase.getInstance().getReference();
-        newBlueTwo.push().setValue(blueTwo.getText().toString());
+        newBlueTwo.child("Blue Two Number").setValue(blueTwo.getText().toString());
         DatabaseReference newMatch = FirebaseDatabase.getInstance().getReference();
-        newMatch.push().setValue(String.valueOf(matchNumber.getText()));
+        newMatch.child("New Match").setValue(String.valueOf(matchNumber.getText()));
         DatabaseReference newRedOnePoints = FirebaseDatabase.getInstance().getReference();
-        newRedOnePoints.push().setValue(redOnePoints.getText().toString());
+        newRedOnePoints.child("Red One Points").setValue(redOnePoints.getText().toString());
         DatabaseReference newRedTwoPoints = FirebaseDatabase.getInstance().getReference();
-        newRedTwoPoints.push().setValue(redTwoPoints.getText().toString());
+        newRedTwoPoints.child("Red Two Points").setValue(redTwoPoints.getText().toString());
         DatabaseReference newBlueOnePoints = FirebaseDatabase.getInstance().getReference();
-        newBlueOnePoints.push().setValue(blueOnePoints.getText().toString());
+        newBlueOnePoints.child("Blue One Points").setValue(blueOnePoints.getText().toString());
         DatabaseReference newBlueTwoPoints = FirebaseDatabase.getInstance().getReference();
-        newBlueTwoPoints.push().setValue(blueTwoPoints.getText().toString());
+        newBlueTwoPoints.child("Blue Two Points").setValue(blueTwoPoints.getText().toString());
         }
 }
