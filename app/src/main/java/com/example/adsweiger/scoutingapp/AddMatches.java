@@ -24,13 +24,13 @@ public class AddMatches extends AppCompatActivity {
         //Intent done = new Intent(this, Matches.class);
         Intent saveMatches = new Intent(this, Matches.class);
         final EditText redOne = findViewById(R.id.editText8);
-        saveMatches.putExtra("red one", redOne.getText().toString());
+        saveMatches.putExtra("red one", Integer.parseInt(redOne.getText().toString()));
         final EditText redTwo = findViewById(R.id.editText9);
-        saveMatches.putExtra("red two", redTwo.getText().toString());
+        saveMatches.putExtra("red two", Integer.parseInt(redTwo.getText().toString()));
         final EditText blueOne = findViewById(R.id.editText10);
-        saveMatches.putExtra("blue one", blueOne.getText().toString());
+        saveMatches.putExtra("blue one", Integer.parseInt(blueOne.getText().toString()));
         final EditText blueTwo = findViewById(R.id.editText11);
-        saveMatches.putExtra("blue two", blueTwo.getText().toString());
+        saveMatches.putExtra("blue two", Integer.parseInt(blueTwo.getText().toString()));
         final EditText matchNumber = findViewById(R.id.editText7);
         saveMatches.putExtra("match number", Integer.parseInt(matchNumber.getText().toString()));
         final EditText redOnePoints = findViewById(R.id.editText12);
