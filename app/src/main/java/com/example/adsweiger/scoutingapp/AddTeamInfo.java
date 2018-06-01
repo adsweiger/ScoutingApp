@@ -3,12 +3,18 @@ package com.example.adsweiger.scoutingapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.Map;
 
 public class AddTeamInfo extends AppCompatActivity {
 
@@ -20,6 +26,12 @@ public class AddTeamInfo extends AppCompatActivity {
 
     public void saveWhenDone(View view)
     {
+
+        Team data1 = new Team();
+        data1.setNumber(123);
+        data1.setPoints(11);
+        newTeamName.setValue(data1);
+
         Intent saveTeamInfo = new Intent(this, TeamInfo.class);
         final EditText editText = findViewById(R.id.editText);
         saveTeamInfo.putExtra("name of team", editText.getText().toString());
@@ -46,5 +58,27 @@ public class AddTeamInfo extends AppCompatActivity {
         newPlanForEnd.child("Endgame Plan").setValue(editText5.getText().toString());
         DatabaseReference newOtherInfo = FirebaseDatabase.getInstance().getReference();
         newOtherInfo.child("Other Information").setValue(editText6.getText().toString());
+        TeamStorage newTeam = new TeamStorage(newTeamName.toString(), newTeamNumber.toString(), newAutoCap.toString(), newPlanForTele.toString(), newPlanForEnd.toString(), newOtherInfo.toString());
+        Log.i("Comment: ", newTeam.toString());
+        newTeamName.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
+                for (Map.Entry<String, Object> entry : map.entrySet()) {
+                    String key = entry.getKey();
+                    Object value = entry.getValue();
+                    Log.d("checkpoint", "Value is: " + value);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Log.w("checkpoint", "Failed to read value.", error.toException());
+            }
+        });
+
     }
 }

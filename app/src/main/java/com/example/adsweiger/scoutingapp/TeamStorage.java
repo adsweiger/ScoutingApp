@@ -3,21 +3,12 @@ package com.example.adsweiger.scoutingapp;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class TeamStorage
-{
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference();
-}
-
-/*
-// OUT OF ORDER
 import java.util.HashMap;
 import java.util.Map;
 
-public class TeamStorage
-{
-    final FirebaseDatabase database;
-        DatabaseReference ref;
+public class TeamStorage {
+    FirebaseDatabase database;
+    DatabaseReference ref;
 
     public String teamName;
     public String teamNumber;
@@ -25,17 +16,30 @@ public class TeamStorage
     public String telePlan;
     public String endGamePlan;
     public String otherInfo;
-
-    public TeamStorage(String teamName, String teamNumber, String autoCapability, String telePlan, String endGamePlan, String otherInfo)
-    {
-        database = FirebaseDatabase.getInstance();
-        ref = database.getReference("");
-   }
-
-    DatabaseReference teamRef = ref.child("teams");
-
     Map<String, TeamStorage> teams = new HashMap<>();
-    teams.put("Lost in Time", new TeamStorage("4324","Unknown","Unknown","Unknown","Unknown"));
 
-    teamRef.setValueAsync(teams);
-*/
+    public TeamStorage() {
+
+    }
+
+    public TeamStorage(String teamName, String teamNumber, String autoCapability, String telePlan, String endGamePlan, String otherInfo) {
+        this.teamName = teamName;
+        this.teamNumber = teamNumber;
+        this.autoCapability = autoCapability;
+        this.telePlan = telePlan;
+        this.endGamePlan = endGamePlan;
+        this.otherInfo = otherInfo;
+    }
+
+    public Map<String, Object> toMap() {
+        HashMap<String, Object> result = new HashMap<>();
+        result.put("teamName", teamName);
+        result.put("teamNumber", teamNumber);
+        result.put("autoCapability", autoCapability);
+        result.put("telePlan", telePlan);
+        result.put("endGamePlan", endGamePlan);
+        result.put("otherInfo", otherInfo);
+
+        return result;
+    }
+}

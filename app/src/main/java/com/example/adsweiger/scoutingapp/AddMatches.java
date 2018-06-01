@@ -7,10 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import org.w3c.dom.Text;
 
 public class AddMatches extends AppCompatActivity {
