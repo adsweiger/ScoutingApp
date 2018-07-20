@@ -15,17 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TeamInfo">
+        <activity android:name=".TeamInfoActivity">
         <intent-filter>
             <action android:name="com.example.package_path.TeamInfo" />
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
         </activity>
-        <activity android:name=".TeamPoints" />
+        <activity android:name=".TeamPointsActivity" />
         <activity android:name=".Matches" />
-        <activity android:name=".BarrierScreen" />
-        <activity android:name=".AddTeamInfo"/>
-        <activity android:name=".AddMatches" />
+        <activity android:name=".BarrierScreenActivity" />
+        <activity android:name=".AddTeamInfoActivity"/>
+        <activity android:name=".AddMatchesActivity" />
     </application>
 
 </manifest>
