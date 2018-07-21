@@ -70,10 +70,10 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".TeamInfo">
+            tools:context=".activities.TeamInfoActivity">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/backButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="onBackClick"
@@ -83,7 +83,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/teamInfo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="152dp"
@@ -94,7 +94,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/addTeamButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="6dp"
@@ -105,7 +105,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/NameOfTeam"
+                android:id="@+id/teamNameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
@@ -113,10 +113,10 @@
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button5" />
+                app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
             <TextView
-                android:id="@+id/TeamNumber"
+                android:id="@+id/teamNumberText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -124,10 +124,10 @@
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/NameOfTeam" />
+                app:layout_constraintTop_toBottomOf="@+id/teamNameText" />
 
             <TextView
-                android:id="@+id/OtherInfo"
+                android:id="@+id/teamOtherInfoText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -135,10 +135,10 @@
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EndGamePlan" />
+                app:layout_constraintTop_toBottomOf="@+id/teamEndGamePlanText" />
 
             <TextView
-                android:id="@+id/EndGamePlan"
+                android:id="@+id/teamEndGamePlanText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -146,10 +146,10 @@
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/TeleopPlan" />
+                app:layout_constraintTop_toBottomOf="@+id/teamTeleopPlanText" />
 
             <TextView
-                android:id="@+id/TeleopPlan"
+                android:id="@+id/teamTeleopPlanText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -157,10 +157,10 @@
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/AutoCapability" />
+                app:layout_constraintTop_toBottomOf="@+id/teamAutoCapabilityText" />
 
             <TextView
-                android:id="@+id/AutoCapability"
+                android:id="@+id/teamAutoCapabilityText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -168,7 +168,7 @@
                 android:text="TextView"
                 android:textAppearance="@style/TextAppearance.AppCompat"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/TeamNumber" />
+                app:layout_constraintTop_toBottomOf="@+id/teamNumberText" />
 
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>

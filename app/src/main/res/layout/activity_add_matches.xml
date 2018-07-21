@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context=".AddMatches">
+    tools:context=".activities.AddMatchesActivity">
 
     <Button
         android:id="@+id/backButton"
@@ -20,17 +20,17 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/addMatchText"
         android:layout_width="wrap_content"
         android:layout_height="14dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="40dp"
         android:text="Add Match"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/matchNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -38,22 +38,22 @@
         android:ems="10"
         android:inputType="number"
         android:selectAllOnFocus="true"
-        android:text="Match Number"
+        android:hint="Match Number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/redAllianceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:text="Red Alliance"
+        android:hint="Red Alliance"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+        app:layout_constraintTop_toBottomOf="@+id/matchNumber" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/redOneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -61,12 +61,12 @@
         android:ems="10"
         android:inputType="textPersonName|number"
         android:selectAllOnFocus="true"
-        android:text="Number"
+        android:hint="Number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/redAllianceText" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/redTwoNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -74,22 +74,22 @@
         android:ems="10"
         android:inputType="textPersonName|number"
         android:selectAllOnFocus="true"
-        android:text="Number"
+        android:hint="Number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8" />
+        app:layout_constraintTop_toBottomOf="@+id/redOneNumber" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/blueAllianceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
-        android:text="Blue Alliance"
+        android:hint="Blue Alliance"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/redTwoNumber" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/blueOneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -97,12 +97,12 @@
         android:ems="10"
         android:inputType="textPersonName|number"
         android:selectAllOnFocus="true"
-        android:text="Number"
+        android:hint="Number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/blueAllianceText" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/blueTwoNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -110,12 +110,12 @@
         android:ems="10"
         android:inputType="textPersonName|number"
         android:selectAllOnFocus="true"
-        android:text="Number"
+        android:hint="Number"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+        app:layout_constraintTop_toBottomOf="@+id/blueOneNumber" />
 
     <EditText
-        android:id="@+id/editText12"
+        android:id="@+id/redOnePoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
@@ -123,25 +123,25 @@
         android:ems="10"
         android:inputType="number"
         android:selectAllOnFocus="true"
-        android:text="Points Earned"
-        app:layout_constraintBottom_toTopOf="@+id/editText13"
-        app:layout_constraintStart_toEndOf="@+id/editText8" />
+        android:hint="Points Earned"
+        app:layout_constraintBottom_toTopOf="@+id/redTwoPoints"
+        app:layout_constraintStart_toEndOf="@+id/redOneNumber" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/redTwoPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="56dp"
         android:layout_marginStart="8dp"
         android:ems="10"
+        android:hint="Points Earned"
         android:inputType="number"
         android:selectAllOnFocus="true"
-        android:text="Points Earned"
-        app:layout_constraintBottom_toTopOf="@+id/editText14"
-        app:layout_constraintStart_toEndOf="@+id/editText9" />
+        app:layout_constraintBottom_toTopOf="@+id/blueOnePoints"
+        app:layout_constraintStart_toEndOf="@+id/redTwoNumber" />
 
     <EditText
-        android:id="@+id/editText14"
+        android:id="@+id/blueOnePoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
@@ -149,12 +149,12 @@
         android:ems="10"
         android:inputType="number"
         android:selectAllOnFocus="true"
-        android:text="Points Earned"
-        app:layout_constraintBottom_toTopOf="@+id/editText15"
-        app:layout_constraintStart_toEndOf="@+id/editText10" />
+        android:hint="Points Earned"
+        app:layout_constraintBottom_toTopOf="@+id/blueTwoPoints"
+        app:layout_constraintStart_toEndOf="@+id/blueOneNumber" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/blueTwoPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -162,7 +162,7 @@
         android:ems="10"
         android:inputType="number"
         android:selectAllOnFocus="true"
-        android:text="Points Earned"
-        app:layout_constraintStart_toEndOf="@+id/editText11"
+        android:hint="Points Earned"
+        app:layout_constraintStart_toEndOf="@+id/blueTwoNumber"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

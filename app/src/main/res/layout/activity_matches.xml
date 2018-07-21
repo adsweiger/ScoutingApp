@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Matches">
+    tools:context=".activities.MatchesActivity">
 
     <Button
         android:id="@+id/backButton"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/MatchNumber"
+        android:id="@+id/matchNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -36,100 +36,100 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/RedAlliance"
+        android:id="@+id/redAllianceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="Red Alliance"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MatchNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/matchNumber" />
 
     <TextView
-        android:id="@+id/RedTeam1"
+        android:id="@+id/redTeamOneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="19dp"
         android:text="Red Team 1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RedAlliance" />
+        app:layout_constraintTop_toBottomOf="@+id/redAllianceText" />
 
     <TextView
-        android:id="@+id/RedTeam2"
+        android:id="@+id/redTeamTwoNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="25dp"
         android:text="Red Team 2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RedTeam1" />
+        app:layout_constraintTop_toBottomOf="@+id/redTeamOneNumber" />
 
     <TextView
-        android:id="@+id/BlueAlliance"
+        android:id="@+id/blueAllianceText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="18dp"
         android:text="Blue Alliance"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RedTeam2" />
+        app:layout_constraintTop_toBottomOf="@+id/redTeamTwoNumber" />
 
     <TextView
-        android:id="@+id/BlueTeam1"
+        android:id="@+id/blueTeamOneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Blue Team 1"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Blue1Points"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blueTeamOnePoints"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/BlueTeam2"
+        android:id="@+id/blueTeamTwoNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Blue Team 2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/Blue2Points"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blueTeamTwoPoints"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/Red2Points"
+        android:id="@+id/redTeamTwoPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:text="Red2Points"
-        app:layout_constraintBaseline_toBaselineOf="@+id/RedTeam2"
-        app:layout_constraintStart_toStartOf="@+id/Red1Points" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/redTeamTwoNumber"
+        app:layout_constraintStart_toStartOf="@+id/redTeamOnePoints" />
 
     <TextView
-        android:id="@+id/Red1Points"
+        android:id="@+id/redTeamOnePoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:inputType="number"
         android:text="Red1Points"
-        app:layout_constraintBaseline_toBaselineOf="@+id/RedTeam1"
-        app:layout_constraintStart_toEndOf="@+id/RedTeam1" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/redTeamOneNumber"
+        app:layout_constraintStart_toEndOf="@+id/redTeamOneNumber" />
 
     <TextView
-        android:id="@+id/Blue1Points"
+        android:id="@+id/blueTeamOnePoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="21dp"
         android:inputType="number"
         android:text="Blue1Points"
-        app:layout_constraintBottom_toTopOf="@+id/Blue2Points"
-        app:layout_constraintStart_toStartOf="@+id/Blue2Points" />
+        app:layout_constraintBottom_toTopOf="@+id/blueTeamTwoPoints"
+        app:layout_constraintStart_toStartOf="@+id/blueTeamTwoPoints" />
 
     <TextView
-        android:id="@+id/Blue2Points"
+        android:id="@+id/blueTeamTwoPoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="61dp"
         android:inputType="number"
         android:text="Blue2Points"
-        app:layout_constraintStart_toEndOf="@+id/BlueTeam2"
-        app:layout_constraintTop_toBottomOf="@+id/BlueAlliance" />
+        app:layout_constraintStart_toEndOf="@+id/blueTeamTwoNumber"
+        app:layout_constraintTop_toBottomOf="@+id/blueAllianceText" />
 </android.support.constraint.ConstraintLayout>
