@@ -70,7 +70,7 @@
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".TeamInfoActivity">
+            tools:context=".activities.TeamInfoActivity">
 
             <Button
                 android:id="@+id/backButton"

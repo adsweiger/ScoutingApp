@@ -9,23 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TeamInfoActivity">
+        <activity android:name=".activities.TeamInfoActivity">
         <intent-filter>
             <action android:name="com.example.package_path.TeamInfo" />
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
         </activity>
-        <activity android:name=".TeamPointsActivity" />
-        <activity android:name=".Matches" />
-        <activity android:name=".BarrierScreenActivity" />
-        <activity android:name=".AddTeamInfoActivity"/>
-        <activity android:name=".AddMatchesActivity" />
+        <activity android:name=".activities.TeamPointsActivity" />
+        <activity android:name=".activities.MatchesActivity" />
+        <activity android:name=".activities.BarrierScreenActivity" />
+        <activity android:name=".activities.AddTeamInfoActivity"/>
+        <activity android:name=".activities.AddMatchesActivity" />
     </application>
 
 </manifest>
