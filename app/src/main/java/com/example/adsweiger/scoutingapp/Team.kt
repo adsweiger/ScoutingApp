@@ -4,12 +4,18 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class Team(val name: String, val number: String, val autoCapability: String, val telePlan: String, val endGamePlan: String, val otherInfo: String) {
-    companion object : HashMap<String, Team>() {
-
+    companion object : ArrayList<Team>() {
+//        fun find(key: String): Team {
+//            forEach {
+//                if(it.name.contains(key) || it.number.contains(key)) {
+//
+//                }
+//            }
+//        }
     }
 
     init {
-        Team[name] = this
+        Team.add(this)
     }
 
     var database: FirebaseDatabase? = null

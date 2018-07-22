@@ -1,0 +1,95 @@
+
+
+This is just a brief overview of the syntax of kotlin
+so you should proably go here to get a better understanding
+https://kotlinlang.org/docs/reference/basic-syntax.html
+
+
+The first thing in kotlin you probably notice is that you
+don't have to use semi colons to end lines. If you need
+to have move than one statement on one line you can
+still use a semicolon to separate them but you will
+probably never use this
+
+Another thing is that you dont have to specify
+the type of the variables you use because the compiler
+will use "type inference" to determine variable types.
+
+For example in this java code,
+int i = 0;
+would be translated to kotlin as
+var i = 0 //the var keyword is to declare variables (it is NOT the same as the javascript var keyword)
+
+However you can still optionally include their type like this
+var i: Int = 0
+
+Kotlin doesn't have java's primitive types like int, double, char, etc.
+Instead they are replaced with their object counterparts as Int, Double, Char
+This means that you can call methods on them like this
+var i: Int = 0
+var str: String = i.toString() //str would be "0"
+In java that would look like
+int i = 0;
+String str = Integer.parse(i); //looks a lot uglier doesn't it?
+
+In kotlin you can also easily create immutable variables,
+meaning they can't be reset, without using a final keyword
+For example in java if you wanted to make a variable
+that can't reset, you would do something like this
+final int i = 0;
+i = 1; //causes a compiler error because i is final
+In kotlin you would just use the "val" keyword
+val i = 0
+i = 1 //causes a compiler error because i is a val
+
+Also in kotlin functions are defined with the "fun" keyword like this
+fun functionName() {
+
+}
+In java
+void functionName() {
+
+}
+
+You include parameters like this
+fun functionWithInt(parameter: Int) {
+
+}
+In java
+void functionWithInt(int parameter) {
+
+}
+You return values from functions like this
+fun IntToString(number: Int): String //because it is returning a String {
+    return number.toString()
+}
+In java
+String IntToString(int number) {
+    return Integer.parse(number);
+}
+
+Another thing about kotlin is that it will try replace "getVariable" and "setVariable" methods to look just "variable"
+For example in java you might see something like this
+String text = textView.getText();
+or
+textView.setText("some text");
+in kotlin this would look like
+val text = textView.text
+and
+textView.text = "some text"
+
+Another super useful thing is that you never have to use the "findViewById" function with kotlin
+For example in java you might have something like this
+TextView textView = findViewById(R.id.textViewId);
+textView.setText("some text");
+but in kotlin you can just do it like this
+textViewId.text = "someText"
+
+textViewId might be red but that just means that it isn't imported,
+just press alt enter over it and select the one that looks like
+"import kotlinx.android.synthetic.main.ACTIVITY_NAME.*"
+
+Also there is no "new" keyword in kotlin so something like
+Object obj = new Object();
+in kotlin would be
+val obj = Object()
