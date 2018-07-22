@@ -7,13 +7,13 @@ import android.view.View
 import com.example.adsweiger.scoutingapp.MatchKeys
 import com.example.adsweiger.scoutingapp.R
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_add_matches.*
+import kotlinx.android.synthetic.main.activity_add_match.*
 
-class AddMatchesActivity : AppCompatActivity() {
+class AddMatchActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_matches)
+        setContentView(R.layout.activity_add_match)
     }
 
     fun onDoneClick(view: View) {

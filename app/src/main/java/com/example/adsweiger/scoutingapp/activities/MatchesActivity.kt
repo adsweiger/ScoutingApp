@@ -37,7 +37,7 @@ class MatchesActivity : AppCompatActivity() {
     }
 
     fun onAddClick(view: View) {
-        val add = Intent(this, AddMatchesActivity::class.java)
+        val add = Intent(this, AddMatchActivity::class.java)
         startActivity(add)
     }
 }

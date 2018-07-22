@@ -10,11 +10,11 @@ class BarrierScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.edit_team_info)
+        setContentView(R.layout.activity_edit_team)
     }
 
     fun backToTeamInfo(view: View) {
-        val backToTeamInfo = Intent(this, TeamInfoActivity::class.java)
+        val backToTeamInfo = Intent(this, TeamsActivity::class.java)
         startActivity(backToTeamInfo)
     }
 }

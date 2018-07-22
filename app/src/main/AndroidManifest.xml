@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.TeamInfoActivity">
+        <activity android:name=".activities.TeamsActivity">
         <intent-filter>
             <action android:name="com.example.package_path.TeamInfo" />
             <category android:name="android.intent.category.DEFAULT" />
@@ -24,8 +24,8 @@
         <activity android:name=".activities.TeamPointsActivity" />
         <activity android:name=".activities.MatchesActivity" />
         <activity android:name=".activities.BarrierScreenActivity" />
-        <activity android:name=".activities.AddTeamInfoActivity"/>
-        <activity android:name=".activities.AddMatchesActivity" />
+        <activity android:name=".activities.AddTeamActivity"/>
+        <activity android:name=".activities.AddMatchActivity" />
     </application>
 
 </manifest>

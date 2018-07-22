@@ -39,14 +39,9 @@ class MainActivity : AppCompatActivity() {
     fun onButtonClick(view: View) {
         Log.i("comment", "Point A Reached")
         // Reaches point A but not B, must be an issue with the line below.
-        val next = Intent(this, TeamInfoActivity::class.java)
+        val next = Intent(this, TeamsActivity::class.java)
         startActivity(next)
         Log.i("comment", "Point B Reached")
-    }
-
-    fun onButton2Click(view: View) {
-        val next = Intent(this, TeamPointsActivity::class.java)
-        startActivity(next)
     }
 
     fun onButton3Click(view: View) {

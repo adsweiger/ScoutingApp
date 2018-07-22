@@ -11,15 +11,15 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import kotlinx.android.synthetic.main.activity_team_info.*
+import kotlinx.android.synthetic.main.activity_teams.*
 
 
-class TeamInfoActivity : AppCompatActivity() {
+class TeamsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val myTeamName = FirebaseDatabase.getInstance().reference
         Log.i("comment", "Point C Reached")
-        setContentView(R.layout.activity_team_info)
+        setContentView(R.layout.activity_teams)
         val bundle = intent.extras
         if (bundle == null) {
             Log.i("stuff", "Null bundle")
@@ -57,7 +57,7 @@ class TeamInfoActivity : AppCompatActivity() {
     }
 
     fun onAddClick(view: View) {
-        val addTeamInfo = Intent(this, AddTeamInfoActivity::class.java)
+        val addTeamInfo = Intent(this, AddTeamActivity::class.java)
         startActivity(addTeamInfo)
     }
 }
